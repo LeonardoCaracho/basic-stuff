@@ -1,0 +1,19 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "negreyscow <leeo.apc@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
