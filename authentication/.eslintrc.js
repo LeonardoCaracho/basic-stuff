@@ -1,13 +1,13 @@
 module.exports = {
   env: {
-    browser: true,
+    node: true,
     es6: true
   },
   extends: [
     'plugins:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
+    "plugin:prettier/recommended",
     'standard',
-	'prettier/@typescript-eslint',
-	"plugin:prettier/recommended"
   ],
   globals: {
     Atomics: 'readonly',

@@ -1,9 +1,9 @@
-const { Router } = require('express')
+import { Router } from 'express'
 
-const routes = new Router()
+import UserController from './controllers/UserController'
 
-routes.get('/', (req: Request, res: Response) => {
-    return res.json()
-})
+const routes = Router()
+
+routes.get('/', UserController.index)
 
 export default routes
