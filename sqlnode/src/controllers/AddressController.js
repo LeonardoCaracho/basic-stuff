@@ -24,7 +24,7 @@ module.exports = {
             return res.status(400).json({ error: 'User not found' })
         }
 
-        const address = Address.create({
+        const address = await Address.create({
             zipcode,
             street,
             number,
